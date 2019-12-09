@@ -1,9 +1,9 @@
 import React from 'react';
 import './style.css';
-import './logo.jpg';
+import { Image } from 'react-bootstrap';
 
 function Logo() {
-  return <img src="./logo.jpg" alt="logo" className="logo"></img>;
+  return <Image src="./logo.jpg" alt="logo"></Image>;
 }
 
 export default Logo;

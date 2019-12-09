@@ -1,11 +1,12 @@
 import React from 'react';
 import './style.css';
+import { Container } from 'react-bootstrap';
 
 function Title() {
   return (
-    <div className="title">
+    <Container>
       <h1>뭐라KU?</h1>
-    </div>
+    </Container>
   );
 }
 
