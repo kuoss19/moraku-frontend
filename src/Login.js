@@ -5,9 +5,9 @@ import './style.css';
 
 function Login() {
   return (
-    <div className="login">
+    <div>
       <Language />
-      <Button style="login-btn" onClick="" text="구글 로그인" />
+      <Button style="btn btn-dark" onClick="" text="구글 로그인" />
     </div>
   );
 }
