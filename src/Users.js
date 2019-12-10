@@ -46,6 +46,30 @@ const users = [
     flag: '-',
     language: 'en',
   },
+  {
+    userName: 'Alex',
+    icon: '-',
+    flag: '-',
+    language: 'en',
+  },
+  {
+    userName: 'Alex',
+    icon: '-',
+    flag: '-',
+    language: 'en',
+  },
+  {
+    userName: 'Alex',
+    icon: '-',
+    flag: '-',
+    language: 'en',
+  },
+  {
+    userName: 'Alex',
+    icon: '-',
+    flag: '-',
+    language: 'en',
+  },
 ];
 
 function Users() {
