@@ -1,5 +1,4 @@
 import React from 'react';
-import './style.css';
 import { Container, Row, Col } from 'react-bootstrap';
 import InputText from './InputText';
 import Button from './Button';

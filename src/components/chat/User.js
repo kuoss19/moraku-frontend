@@ -1,5 +1,4 @@
 import React from 'react';
-import './style.css';
 import { Container, Col, Row, Image } from 'react-bootstrap';
 
 function User({ userName, language, flag, icon }) {

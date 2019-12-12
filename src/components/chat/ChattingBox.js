@@ -1,5 +1,4 @@
 import React from 'react';
-import './style.css';
 import { Container } from 'react-bootstrap';
 import Chatting from './Chatting';
 
@@ -41,9 +40,9 @@ const chattings = [
 function ChattingBox() {
   return (
     <Container className="chatting_box">
-      {chattings.map((chatting, i) => {
-        return <Chatting text={chatting.text} style={chatting.style} key={i} />;
-      })}
+      {chattings.map((chatting, i) => (
+        <Chatting text={chatting.text} style={chatting.style} key={i} />
+      ))}
     </Container>
   );
 }
