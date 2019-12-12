@@ -1,5 +1,4 @@
 import React from 'react';
-import '../assets/css/style.css';
 
 function Button({ style, onClick, text }) {
   return (

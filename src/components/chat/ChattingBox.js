@@ -1,6 +1,5 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
-import '../assets/css/style.css';
 import Chatting from './Chatting';
 
 const chattings = [
