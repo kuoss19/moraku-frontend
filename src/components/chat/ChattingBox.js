@@ -1,47 +1,15 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { Container } from 'react-bootstrap';
 import Chatting from './Chatting';
 
-const chattings = [
-  {
-    text: 'Erat stet dolores ut tempor et rebum vero eirmod sit..',
-    style: 'left',
-  },
-  {
-    text: 'Erat stet dolores ut tempor et rebum vero eirmod sit..',
-    style: 'right',
-  },
-  {
-    text: 'Erat stet dolores ut tempor et rebum vero eirmod sit..',
-    style: 'left',
-  },
-  {
-    text: 'Erat stet dolores ut tempor et rebum vero eirmod sit..',
-    style: 'left',
-  },
-  {
-    text: 'Erat stet dolores ut tempor et rebum vero eirmod sit..',
-    style: 'right',
-  },
-  {
-    text: 'Erat stet dolores ut tempor et rebum vero eirmod sit..',
-    style: 'left',
-  },
-  {
-    text: 'Erat stet dolores ut tempor et rebum vero eirmod sit..',
-    style: 'right',
-  },
-  {
-    text: 'Erat stet dolores ut tempor et rebum vero eirmod sit..',
-    style: 'left',
-  },
-];
-
 function ChattingBox() {
+  const { messages } = useSelector(state => state.chat);
+
   return (
     <Container className="chatting_box">
-      {chattings.map((chatting, i) => (
-        <Chatting text={chatting.text} style={chatting.style} key={i} />
+      {messages.map((message, i) => (
+        <Chatting text={message.text} style={message.style} key={i} />
       ))}
     </Container>
   );

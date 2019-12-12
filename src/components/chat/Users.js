@@ -1,86 +1,21 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import { Container } from 'react-bootstrap';
 import User from './User';
 
-const users = [
-  {
-    userName: 'Alex',
-    icon: '-',
-    flag: '-',
-    language: 'en',
-  },
-  {
-    userName: 'Alex',
-    icon: '-',
-    flag: '-',
-    language: 'en',
-  },
-  {
-    userName: 'Alex',
-    icon: '-',
-    flag: '-',
-    language: 'en',
-  },
-  {
-    userName: 'Alex',
-    icon: '-',
-    flag: '-',
-    language: 'en',
-  },
-  {
-    userName: 'Alex',
-    icon: '-',
-    flag: '-',
-    language: 'en',
-  },
-  {
-    userName: 'Alex',
-    icon: '-',
-    flag: '-',
-    language: 'en',
-  },
-  {
-    userName: 'Alex',
-    icon: '-',
-    flag: '-',
-    language: 'en',
-  },
-  {
-    userName: 'Alex',
-    icon: '-',
-    flag: '-',
-    language: 'en',
-  },
-  {
-    userName: 'Alex',
-    icon: '-',
-    flag: '-',
-    language: 'en',
-  },
-  {
-    userName: 'Alex',
-    icon: '-',
-    flag: '-',
-    language: 'en',
-  },
-  {
-    userName: 'Alex',
-    icon: '-',
-    flag: '-',
-    language: 'en',
-  },
-];
-
 function Users() {
+  const { participants } = useSelector(state => state.chat);
+  const lang = useSelector(state => state.lang);
+
   return (
     <Container className="users">
-      {users.map(({ userName, icon, flag, language }, index) => (
+      {participants.map(({ id, username, photo, flag }) => (
         <User
-          userName={userName}
-          icon={icon}
+          userName={username}
+          icon={photo}
           flag={flag}
-          language={language}
-          key={index}
+          language={lang}
+          key={id}
         />
       ))}
     </Container>
