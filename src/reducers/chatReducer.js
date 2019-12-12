@@ -2,8 +2,8 @@ import {
   CONNECT_SUCCESSFUL,
   CONNECT_FAILED,
   ANOTHER_PERSON_CONNECTED,
-} from '../actions/chat/connection';
-import { SEND_MESSAGE, RECEIVE_MESSAGE } from '../actions/chat/message';
+} from '../actions/chat/connectionActions';
+import { SEND_MESSAGE, RECEIVE_MESSAGE } from '../actions/chat/messageActions';
 
 const initialState = {
   participants: [],

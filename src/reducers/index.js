@@ -1,6 +1,10 @@
 import { combineReducers } from 'redux';
-import user from './user';
-import lang from './lang';
-import chat from './chat';
+import userReducer from './userReducer';
+import langReducer from './langReducer';
+import chatReducer from './chatReducer';
 
-export default combineReducers({ user, lang, chat });
+export default combineReducers({
+  user: userReducer,
+  lang: langReducer,
+  chat: chatReducer,
+});

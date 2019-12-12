@@ -1,4 +1,4 @@
-import { SELECT_LANG } from '../actions/lang';
+import { SELECT_LANG } from '../actions/langActions';
 
 const initialState = 'ko';
 

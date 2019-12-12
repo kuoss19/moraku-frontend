@@ -1,4 +1,4 @@
-import { LOGIN, LOGOUT } from '../actions/users';
+import { LOGIN, LOGOUT } from '../actions/userActions';
 
 const initialState = null;
 
