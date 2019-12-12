@@ -1,18 +1,25 @@
-import React from 'react';
+import React, { useState } from 'react';
+import { Redirect } from 'react-router-dom';
 import firebase from 'firebase/app';
 import 'firebase/auth';
 import { Button, Col, Row } from 'react-bootstrap';
 
 export default function UserAction() {
+  const [enter, setEnter] = useState(false);
+
   const enterChatroom = event => {
     event.preventDefault();
-    console.log('enter chatroom');
+    setEnter(true);
   };
 
   const logout = async event => {
     event.preventDefault();
     await firebase.auth().signOut();
   };
+
+  if (enter) {
+    return <Redirect to="/chat" />;
+  }
 
   return (
     <>

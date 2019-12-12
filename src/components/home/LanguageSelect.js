@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from 'react-redux';
 import { Col, Form } from 'react-bootstrap';
-import { selectLanguage } from '../../actions/lang';
+import { selectLanguage } from '../../actions/langActions';
 
 function LanguageSelect() {
   const dispatch = useDispatch();

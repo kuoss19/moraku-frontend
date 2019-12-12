@@ -4,7 +4,7 @@ import 'firebase/auth';
 import { Route, Switch } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { Home, Chat } from './pages';
-import { login, logout } from '../actions/users';
+import { login, logout } from '../actions/userActions';
 
 export default function App() {
   const dispatch = useDispatch();

@@ -1,20 +1,42 @@
-import React from 'react';
-import { Container, Row, Col } from 'react-bootstrap';
-import InputText from './InputText';
-import Button from './Button';
+/* eslint-disable react/prop-types */
+/* eslint-disable react/style-prop-object */
 
-function InputForm() {
+import React, { useState } from 'react';
+import { useDispatch } from 'react-redux';
+import { Container, Form, InputGroup, Button } from 'react-bootstrap';
+import { sendMessage } from '../../actions/chat/messageActions';
+
+function InputForm({ client }) {
+  const [message, setMessage] = useState('');
+  const dispatch = useDispatch();
+
+  const handleChange = event => {
+    event.preventDefault();
+    setMessage(event.target.value);
+  };
+
+  const handleSubmit = event => {
+    event.preventDefault();
+    const newMessage = {
+      sender: client.current.id,
+      text: message,
+    };
+    client.current.send(newMessage);
+    dispatch(sendMessage(newMessage));
+  };
+
   return (
     <Container>
-      <Row>
-        <Col md="10">
-          <InputText />
-        </Col>
-        <Col md="2">
-          <Button style="btn btn-dark" text="뿌슝빠슝" />
-          {/* TODO: onClcik event handler 구현 */}
-        </Col>
-      </Row>
+      <Form onSubmit={handleSubmit}>
+        <InputGroup>
+          <Form.Control onChange={handleChange} />
+          <InputGroup.Append>
+            <Button variant="dark" type="submit">
+              뿌슝빠슝
+            </Button>
+          </InputGroup.Append>
+        </InputGroup>
+      </Form>
     </Container>
   );
 }

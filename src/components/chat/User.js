@@ -10,7 +10,7 @@ function User({ userName, language, flag, icon }) {
           <Image src={flag} alt={language} />
         </Col>
         <Col md="4">
-          <Image src={icon} alt={userName} />
+          <Image height="100px" src={icon} alt={userName} />
         </Col>
       </Row>
     </Container>
