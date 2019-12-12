@@ -17,11 +17,7 @@ export default function Home() {
       <Row>
         <LanguageSelect />
       </Row>
-      <Row>
-        {''}
-        {user ? <UserAction user={user} /> : <Login />}
-        {''}
-      </Row>
+      <Row>{user ? <UserAction /> : <Login />}</Row>
     </Container>
   );
 }
