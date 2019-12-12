@@ -2,6 +2,6 @@ import LanguageSelect from './LanguageSelect';
 import Login from './Login';
 import Logo from './Logo';
 import Title from './Title';
-import UserAction from './UserAction';
+import User from './User';
 
-export { LanguageSelect, Login, Logo, Title, UserAction };
+export { LanguageSelect, Login, Logo, Title, User };

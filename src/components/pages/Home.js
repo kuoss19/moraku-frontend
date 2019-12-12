@@ -1,7 +1,7 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
 import { Container, Row } from 'react-bootstrap';
-import { Logo, Title, LanguageSelect, UserAction, Login } from '../home';
+import { Logo, Title, LanguageSelect, User, Login } from '../home';
 
 export default function Home() {
   const user = useSelector(state => state.user);
@@ -17,7 +17,7 @@ export default function Home() {
       <Row>
         <LanguageSelect />
       </Row>
-      <Row>{user ? <UserAction /> : <Login />}</Row>
+      <Row>{user ? <User /> : <Login />}</Row>
     </Container>
   );
 }

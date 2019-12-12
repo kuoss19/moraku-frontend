@@ -4,7 +4,7 @@
 import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import { Container, Form, InputGroup, Button } from 'react-bootstrap';
-import { sendMessage } from '../../actions/chat/message';
+import { sendMessage } from '../../actions/chat/messageActions';
 
 function InputForm({ client }) {
   const [message, setMessage] = useState('');
