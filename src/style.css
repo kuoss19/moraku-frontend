@@ -1,0 +1,51 @@
+body {
+  background-color: #333333;
+}
+
+.logo {
+  margin: 0 0;
+  margin-top: 400px;
+  margin-bottom: 50px;
+  width: 300px;
+  height: 100px;
+}
+
+.chatting_box {
+  height: 500px;
+  margin: 30px;
+  padding: 10px;
+  border: 1px solid #888888;
+  border-radius: 4px;
+  box-shadow: 2px 2px 2px #999999;
+  overflow: auto;
+}
+
+.users {
+  height: 580px;
+  margin-top: 30px;
+  padding: 30px 0;
+  background-color: #333333;
+  overflow: auto;
+  border-radius: 4px;
+}
+
+.user {
+  margin: 10px 0;
+  padding: 10px 5px;
+  color: #ffffff;
+  border: 1px solid #999999;
+  box-shadow: 1px 1px 1px #aaaaaa;
+
+}
+
+.left {
+  margin: 15px 0;
+  padding: 10px 10px;
+  border: 1px solid #333333;
+  background-color: #888888;
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
