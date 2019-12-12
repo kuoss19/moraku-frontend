@@ -1,6 +1,6 @@
 import React from 'react';
-import './style.css';
 import { Container } from 'react-bootstrap';
+import '../assets/css/style.css';
 
 function Title() {
   return (

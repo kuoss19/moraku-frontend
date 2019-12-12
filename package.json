@@ -21,7 +21,20 @@
     "extends": [
       "prettier",
       "airbnb"
-    ]
+    ],
+    "rules": {
+      "arrow-parens": [
+        "error",
+        "as-needed"
+      ],
+      "object-curly-newline": "off",
+      "operator-linebreak": [
+        "error",
+        "after"
+      ],
+      "react/jsx-filename-extension": "off",
+      "react/jsx-fragments": "off"
+    }
   },
   "browserslist": {
     "production": [

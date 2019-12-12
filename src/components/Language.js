@@ -1,7 +1,7 @@
 import React from 'react';
-import './style.css';
-import 'bootstrap/dist/css/bootstrap.min.css';
 import { Form } from 'react-bootstrap';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import '../assets/css/style.css';
 
 function Language() {
   return (

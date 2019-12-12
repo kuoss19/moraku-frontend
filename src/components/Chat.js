@@ -1,9 +1,9 @@
 import React from 'react';
+import { Container, Col, Row } from 'react-bootstrap';
 import Users from './Users';
 import ChattingBox from './ChattingBox';
 import InputForm from './InputForm';
-import './style.css';
-import { Container, Col, Row } from 'react-bootstrap';
+import '../assets/css/style.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 
 function Chat() {

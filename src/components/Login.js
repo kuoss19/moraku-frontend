@@ -1,7 +1,7 @@
 import React from 'react';
 import Language from './Language';
 import Button from './Button';
-import './style.css';
+import '../assets/css/style.css';
 
 function Login() {
   return (
