@@ -1,7 +1,6 @@
 import React from 'react';
 import { Container } from 'react-bootstrap';
 import User from './User';
-import '../assets/css/style.css';
 
 const users = [
   {
