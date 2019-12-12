@@ -1,9 +1,33 @@
 import React from 'react';
-import User from './User.js';
+import User from './User';
 import './style.css';
 import { Container } from 'react-bootstrap';
 
 const users = [
+  {
+    userName: 'Alex',
+    icon: '-',
+    flag: '-',
+    language: 'en',
+  },
+  {
+    userName: 'Alex',
+    icon: '-',
+    flag: '-',
+    language: 'en',
+  },
+  {
+    userName: 'Alex',
+    icon: '-',
+    flag: '-',
+    language: 'en',
+  },
+  {
+    userName: 'Alex',
+    icon: '-',
+    flag: '-',
+    language: 'en',
+  },
   {
     userName: 'Alex',
     icon: '-',
@@ -51,16 +75,8 @@ const users = [
 function Users() {
   return (
     <Container className="users">
-      {users.map((user, i) => {
-        return (
-          <User
-            userName={user.userName}
-            icon={user.icon}
-            flag={user.flag}
-            language={user.language}
-            key={i}
-          />
-        );
+      {users.map(({ userName, icon, flag, language }, index) => {
+        return <User userName={userName} icon={icon} flag={flag} language={language} key={index} />;
       })}
     </Container>
   );

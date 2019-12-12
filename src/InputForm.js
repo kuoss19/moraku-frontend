@@ -1,8 +1,8 @@
 import React from 'react';
 import './style.css';
 import { Container, Row, Col } from 'react-bootstrap';
-import InputText from './InputText.js';
-import Button from './Button.js';
+import InputText from './InputText';
+import Button from './Button';
 
 function InputForm() {
   return (
@@ -12,7 +12,7 @@ function InputForm() {
           <InputText />
         </Col>
         <Col md="2">
-          <Button style="btn btn-dark" onClick="" text="뿌슝빠슝" />
+          <Button style="btn btn-dark" text="뿌슝빠슝" /> //TODO onClcik event handler 구현
         </Col>
       </Row>
     </Container>

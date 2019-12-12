@@ -1,10 +1,12 @@
 import React from 'react';
 import './style.css';
 
-function Button(props) {
+function Button({ style, onClick, text }) {
   return (
-    <button type="submit" className={props.style} onClick={props.onClick}>
-      {props.text}
+    <button type="submit" className={style} onClick={onClick}>
+      {' '}
+      //TODO onClick event handler 구현
+      {text}
     </button>
   );
 }
