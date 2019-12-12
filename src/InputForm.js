@@ -12,7 +12,8 @@ function InputForm() {
           <InputText />
         </Col>
         <Col md="2">
-          <Button style="btn btn-dark" text="뿌슝빠슝" /> //TODO onClcik event handler 구현
+          <Button style="btn btn-dark" text="뿌슝빠슝" />
+          {/* TODO: onClcik event handler 구현 */}
         </Col>
       </Row>
     </Container>
